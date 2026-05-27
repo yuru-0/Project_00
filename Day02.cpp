@@ -47,7 +47,9 @@ int main()
     int target = 100;
     int *ptr = &target; // target의 주소를 ptr에 저장
 
+    cout << "Before: " << target << endl; // target의 초기값 출력 (100)
+
     *ptr = 999; // ptr이 가리키는 주소에 999를 저장
 
-    cout << target; // target의 값이 999로 변경되어 출력됨
+    cout << "After: " << target << endl; // target의 값이 999로 변경되어 출력됨
 }
